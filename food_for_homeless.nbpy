@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 20 16:02:28 2019
+
+@author: loram
+"""
+#extract data from this website:
+
+import requests
+from bs4 import BeautifulSoup
+
+
+url = "https://www.thepavement.org.uk/services?service=13&city=1&page=1"
+page = requests.get(url)
+soup = BeautifulSoup(page, 'lxml')
+
+
